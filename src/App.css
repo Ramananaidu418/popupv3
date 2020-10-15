@@ -1,0 +1,58 @@
+.app {
+   width:100vw;
+   height:100vh;
+   background-color:whitesmoke;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+.popup {
+  height:360px;
+  width:533px;
+  background-color: white;
+}
+.top{
+  height:10%;
+  width:100%;
+  /* border: 1px solid purple; */
+  
+}
+.top h1{
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.middle{
+  height:73%;
+  width:100%;
+  /* border: 1px solid purple; */
+   overflow-y:scroll; 
+} 
+
+.bottom{
+  height:15%;
+  width:100%;
+  /* border: 1px solid purple; */
+}
+ 
+.close button{
+  float:right;
+  margin-top:10px;
+  margin-right:50px ;
+  background-color: skyblue;
+
+}
+.btn{
+  float:right;
+  margin-right: 50px;
+  margin-top: 10px;
+  border: 3px solid blue;
+  color:blue;
+  padding-left: 20px;
+  padding-right:20px;
+}
+.submitBtn{
+  margin-right: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
