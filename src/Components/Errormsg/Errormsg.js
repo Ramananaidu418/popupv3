@@ -1,5 +1,7 @@
-import React ,{useState}from "react";
+import React ,{useState,useContext}from "react";
 import "./Errormsg.css";
+
+import {Theme} from  "../../App";
 
 const Errormsg =(props)=> {
     // const [errormessage,setErrormessage] = useState("Errormessage");
@@ -18,15 +20,17 @@ const Errormsg =(props)=> {
     alert(props.errorId);
   };
  
+  let color = useContext(Theme);
+  // alert(color)
     return (
-      <div
+      <div style ={{backgroundColor:color}}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         className={
           onhover ? "error-message mouseOverBg" : "error-message"
         }
       >
-        <div className="error-details">
+        <div className="error-details" >
           <div className="logo">
           <input  onClick = {()=>props.Selection(props.errorId)} type="checkbox" className="myCheck"></input>
             <span class="material-icons">text_rotation_angleup</span>
